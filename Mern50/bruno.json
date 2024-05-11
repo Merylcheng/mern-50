@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Mern50",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
