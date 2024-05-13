@@ -1,0 +1,19 @@
+meta {
+  name: newToken
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3001/api/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "mary",
+      "email": "mary@ga.co",
+      "password": "1234"
+    }
+}

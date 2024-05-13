@@ -10,6 +10,8 @@ https://www.filmplace.co/en/rooms/11410
 
 ## Git setup
 
+set up your repo first in git hub:
+
 1. `git init`
 2. Add on the `.gitignore` from <https://www.toptal.com/developers/gitignore/api/windows,osx,node,visualstudiocode>
 3. `git add .` && `git commit -m ...`
@@ -482,3 +484,92 @@ module.exports = mongoose.model('User', userSchema);
 npm install bcrypt
 
 ## do models > bruno > controller
+
+## git commit as a team
+
+## git clone
+
+git clone git url <type your file name>
+
+after you clone, npm i to download all the packages for json
+
+## git branch into your own then after you're done with your parts, push. (make sure you in your OWN folder!!!!!! )
+
+project3test on  main via  v21.7.1 took 3s
+❯ git branch
+
+- main
+
+project3test on  main [!?] via  v21.7.1
+❯ git checkout -b "merylpropertyPage"
+Switched to a new branch 'merylpropertyPage'
+
+project3test on  merylpropertyPage [!?] via  v21.7.1
+❯ git branch
+main
+
+- merylpropertyPage
+
+project3test on  merylpropertyPage [!?] via  v21.7.1
+❯ git add .
+
+project3test on  merylpropertyPage [+] via  v21.7.1
+❯ git status  
+On branch merylpropertyPage
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+modified: src/pages/App/App.jsx
+new file: src/pages/App/propertyPage.jsx
+
+project3test on  merylpropertyPage [+] via  v21.7.1
+❯ git commit -m "feat/propertyPage"
+✔ Preparing lint-staged...
+✔ Running tasks for staged files...
+✔ Applying modifications from tasks...
+✔ Cleaning up temporary files...
+[merylpropertyPage 3bfc8e6] feat/propertyPage
+2 files changed, 6 insertions(+), 1 deletion(-)
+create mode 100644 src/pages/App/propertyPage.jsx
+
+project3test on  merylpropertyPage via  v21.7.1 took 2s
+❯ git status
+On branch merylpropertyPage
+nothing to commit, working tree clean
+
+project3test on  merylpropertyPage via  v21.7.1
+❯ git push
+fatal: The current branch merylpropertyPage has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin merylpropertyPage
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+## clean up branches
+
+project3test on  main via  v21.7.1
+❯ git branch
+
+- main
+  merylpropertyPage
+
+project3test on  main via  v21.7.1
+❯ git fetch --prune
+From https://github.com/Janethq/project3
+
+- [deleted] (none) -> origin/feature/login_page
+
+project3test on  main via  v21.7.1
+❯ git branch
+
+- main
+  merylpropertyPage
+
+project3test on  main via  v21.7.1
+❯ git branch -d merylpropertyPage
+Deleted branch merylpropertyPage (was 3bfc8e6).
+
+## login in form
+
+-if user found, ...user will check if theres a match in system bcrypt
